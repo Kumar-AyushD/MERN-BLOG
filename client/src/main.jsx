@@ -5,12 +5,15 @@ import "./index.css";
 import { store, persistor } from "./redux/store.js";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
+import ThemProvider from "./components/ThemProvider.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <PersistGate persistor={persistor}>
     <React.StrictMode>
       <Provider store={store}>
-        <App />
+        <ThemProvider>
+          <App />
+        </ThemProvider>
       </Provider>
     </React.StrictMode>
   </PersistGate>
