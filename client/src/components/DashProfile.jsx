@@ -21,7 +21,6 @@ import {
 } from "../redux/user/userSlice.js";
 import { HiOutlineExclamationCircle } from "react-icons/hi";
 import {Link} from 'react-router-dom';
-// import { sign } from "jsonwebtoken";
 
 export default function DashProfile() {
   const dispatch = useDispatch();
