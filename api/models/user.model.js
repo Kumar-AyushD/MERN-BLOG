@@ -19,7 +19,11 @@ const userSchema = new mongoose.Schema(
     profilePicture:{
       type: String,
       default: "https://imgv3.fotor.com/images/blog-richtext-image/10-profile-picture-ideas-to-make-you-stand-out.jpg",
-    }
+    },
+    isAdmin: {
+      type: Boolean,
+      default: false,
+    },
   },
   { timestamps: true }
 );
