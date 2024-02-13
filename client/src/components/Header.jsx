@@ -1,7 +1,8 @@
 import { Avatar, Button, Dropdown, Navbar, TextInput } from "flowbite-react";
 import { Link, useLocation } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
-import { FaMoon, FaSun } from "react-icons/Fa";
+import { IoMoon } from "react-icons/io5";
+import { IoSunnySharp } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../redux/theme/themeSlice";
 import { signoutSuccess } from "../redux/user/userSlice";
@@ -57,7 +58,7 @@ export default function Header() {
           pill
           onClick={() => dispatch(toggleTheme())}
         >
-          {theme === "light" ? <FaMoon /> : <FaSun />}
+          {theme === "light" ? <IoMoon /> : <IoSunnySharp />}
         </Button>
         {currentUser ? (
           <Dropdown

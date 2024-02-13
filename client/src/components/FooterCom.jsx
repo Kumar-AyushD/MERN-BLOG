@@ -1,12 +1,12 @@
 import { Footer } from "flowbite-react";
 import { Link } from "react-router-dom";
 import {
-  BsLinkedin,
-  BsInstagram,
-  BsTwitter,
-  BsGithub,
-  BsDribbble,
-} from "react-icons/Bs";
+  SiLinkedin,
+  SiInstagram,
+  SiTwitter,
+  SiGithub,
+  SiDribbble,
+} from "react-icons/si";
 
 const FooterCom = () => {
   return (
@@ -82,15 +82,18 @@ const FooterCom = () => {
           <div className="flex gap-6 sm:mt-0 mt-4 sm:justify-center">
             <Footer.Icon
               href="https://www.linkedin.com/in/kumar-ayush-3a9543228"
-              icon={BsLinkedin}
+              icon={SiLinkedin}
             />
-            <Footer.Icon href="https://www.instagram.com/" icon={BsInstagram} />
-            <Footer.Icon href="#" icon={BsTwitter} />
+            <Footer.Icon href="https://www.instagram.com/" icon={SiInstagram} />
+            <Footer.Icon href="#" icon={SiTwitter} />
             <Footer.Icon
               href="https://github.com/Kumar-AyushD"
-              icon={BsGithub}
+              icon={SiGithub}
             />
-            <Footer.Icon href="https://dribbble.com/ayush2605" icon={BsDribbble} />
+            <Footer.Icon
+              href="https://dribbble.com/ayush2605"
+              icon={SiDribbble}
+            />
           </div>
         </div>
       </div>
