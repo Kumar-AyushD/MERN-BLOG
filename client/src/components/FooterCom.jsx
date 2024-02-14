@@ -35,13 +35,7 @@ const FooterCom = () => {
                 >
                   Google
                 </Footer.Link>
-                <Footer.Link
-                  href="/about"
-                  target="_blank"
-                  rel="nonopener noreferrer"
-                >
-                  About
-                </Footer.Link>
+                <Footer.Link href="/about">About</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
@@ -83,16 +77,32 @@ const FooterCom = () => {
             <Footer.Icon
               href="https://www.linkedin.com/in/kumar-ayush-3a9543228"
               icon={SiLinkedin}
+              target="_blank"
+              rel="nonopener noreferrer"
             />
-            <Footer.Icon href="https://www.instagram.com/" icon={SiInstagram} />
-            <Footer.Icon href="#" icon={SiTwitter} />
+            <Footer.Icon
+              href="https://www.instagram.com/_ayushthakur_/"
+              icon={SiInstagram}
+              target="_blank"
+              rel="nonopener noreferrer"
+            />
+            <Footer.Icon
+              href="https://twitter.com/kumarayush2605"
+              icon={SiTwitter}
+              target="_blank"
+              rel="nonopener noreferrer"
+            />
             <Footer.Icon
               href="https://github.com/Kumar-AyushD"
               icon={SiGithub}
+              target="_blank"
+              rel="nonopener noreferrer"
             />
             <Footer.Icon
               href="https://dribbble.com/ayush2605"
               icon={SiDribbble}
+              target="_blank"
+              rel="nonopener noreferrer"
             />
           </div>
         </div>
