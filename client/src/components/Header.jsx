@@ -99,9 +99,16 @@ export default function Header() {
                 {currentUser.email}
               </span>
             </Dropdown.Header>
-            <Link to="/dashboard?tab=dash">
-              <Dropdown.Item>Profile</Dropdown.Item>
-            </Link>
+            {!currentUser.isAdmin && (
+              <Link to="/dashboard?tab=profile">
+                <Dropdown.Item>Profile</Dropdown.Item>
+              </Link>
+            )}
+            {currentUser.isAdmin && (
+              <Link to="/dashboard?tab=dash">
+                <Dropdown.Item>Profile</Dropdown.Item>
+              </Link>
+            )}
             <Dropdown.Divider />
             <Dropdown.Item onClick={handleSignout}>Sign Out</Dropdown.Item>
           </Dropdown>
