@@ -23,6 +23,6 @@ link to Ayush's Blog: [Ayush's Blog](https://blog-ayush.onrender.com)
 - Implement a feature for users to like and share blogs.
 
 ## Contact
-For any additional information, feel free to contact me.
+For any additional information, feel free to reach out to me.
 
 Enjoy reading on Ayush's Blog!
